@@ -50,8 +50,29 @@
       
       <div class="backdrop is-hidden" data-modal >
        <div class="modal"  >
+      
        <button  class="button-modals" data-modal-close >  <svg class="icon-advantages-butten "><use href="./images/sprite.svg.svg#icon-Vector2" ></svg> </use> </button>
-       </div>
+       <h3>Оставьте свои данные, мы вам перезвоним</h3>
+       <form action="">
+          <label for="name">Имя</label>
+         <input type="text" name="name" id="name">
+
+         <label for="tel">Телефон</label>
+         <input type="tel" name="tel" id="tel">
+
+         <label for="email">Почта</label>
+         <input type="email" name="email" id="email"> 
+
+         <label for="comments">Комментарий</label>
+         <input type="comments" name="comments" id="comments">
+        
+         <input type="checkbox" name="meeting" value="meeting" id="meeting">
+         <label for="meeting">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+
+         <button type="submit">Отправить</button>
+      </form>
+      </div>
+     
       </div>
          </section> 
       </div>  
@@ -383,8 +404,15 @@
    <div class="content-footer">
       <h3 class="subscribe">Подпишитесь на рассылку</h3>
       <form action="" class="subscribe-us">
-<input type="email">
-<input type="button">
+<input type="e-mail"class="mail" placeholder="">
+<svg class="icon-mail">
+   <use href="./images/sprite.svg.svg#icon-E-mail"></use>
+</svg>
+<button class="button" type="submit">Подписаться
+   <svg class="icon-mail">
+      <use href="./images/sprite.svg.svg#icon-iconsend"></use>
+   </svg>
+</button>
 
       </form>
    </div>
