@@ -345,6 +345,37 @@ height: 11px;
   
 }
 
+.form-modal{
+  
+ 
+}
+
+.tema-modal{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.name-modal{
+  
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
+.name-meeting{
+  
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
 
 .page-title {
   font-weight: 900;
@@ -540,7 +571,12 @@ height: 11px;
 }
 
 .content-footer{
+
+}
+
+.content-footer{
   flex-basis: calc((50% - 45px)/2);
+
 
 }
 
@@ -552,11 +588,16 @@ height: 11px;
   box-sizing: border-box;
   width: 358px;
   height: 50px;
-  padding: 20px, 8px ;
+  
   background-color: var(--dark-bg-color);
-  border: 1px solid rbga(255, 255, 255, 0.3);
+  
 }
-
+/*.mail:-webkit-autofill,
+.mail:-webkit-autofill:hover,
+.mail:-webkit-autofill:focus {
+  -webkit-text-fill-color: currentColor;
+  -webkit-box-shadow:;
+}*/
 
 .subscribe{
   font-weight: bold;
@@ -564,17 +605,15 @@ height: 11px;
   line-height: 1.14;
   letter-spacing: 00.03em;
   color: var(--dark-bg-text-color);
-  bottom: 20px;
+  margin-bottom: 20px;
 
 }
 .icon-mail{
- 
-
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 00.03em;
-
+ 
   
 }
 .icon-mail{
@@ -585,7 +624,7 @@ height: 11px;
   display: inline-block;
   width: 47px;
   height: 20px;
-
+  
   color: rgba (255, 255, 255, 0.6);
 }
 

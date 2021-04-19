@@ -52,22 +52,22 @@
        <div class="modal"  >
       
        <button  class="button-modals" data-modal-close >  <svg class="icon-advantages-butten "><use href="./images/sprite.svg.svg#icon-Vector2" ></svg> </use> </button>
-       <h3>Оставьте свои данные, мы вам перезвоним</h3>
-       <form action="">
-          <label for="name">Имя</label>
-         <input type="text" name="name" id="name">
+       <h3 class="tema-modal">Оставьте свои данные, мы вам перезвоним</h3>
+       <form class="form-modal" autocomplete="on">
+          <label for="name" class="name-modals" >Имя</label>
+         <input type="text" name="name" id="name" autofocus>
 
-         <label for="tel">Телефон</label>
+         <label for="tel" class="name-modals">Телефон</label>
          <input type="tel" name="tel" id="tel">
 
-         <label for="email">Почта</label>
+         <label for="email" class="name-modals">Почта</label>
          <input type="email" name="email" id="email"> 
 
-         <label for="comments">Комментарий</label>
-         <input type="comments" name="comments" id="comments">
+         <label for="comments" class="name-modals">Комментарий</label>
+         <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
         
          <input type="checkbox" name="meeting" value="meeting" id="meeting">
-         <label for="meeting">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+         <label for="meeting" class="name-meeting">Соглашаюсь с рассылкой и принимаю Условия договора</label>
 
          <button type="submit">Отправить</button>
       </form>
@@ -403,8 +403,8 @@
    </div>
    <div class="content-footer">
       <h3 class="subscribe">Подпишитесь на рассылку</h3>
-      <form action="" class="subscribe-us">
-<input type="e-mail"class="mail" placeholder="">
+      <form  class="subscribe-us" >
+<input type="e-mail" class="mail" placeholder="E-mail">
 <svg class="icon-mail">
    <use href="./images/sprite.svg.svg#icon-E-mail"></use>
 </svg>
