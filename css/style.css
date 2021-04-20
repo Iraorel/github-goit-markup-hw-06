@@ -346,10 +346,40 @@ height: 11px;
 }
 
 .form-modal{
+    padding: 20px;
+  margin: 20px;
   
- 
 }
 
+.form-field{
+ 
+  margin-bottom: 20px;
+
+}
+
+.name-modals{
+  
+
+}
+
+.icon-modals{
+  width: 32px;
+  height: 32px;
+  color:var(--title-color);
+
+}
+.fiel-input{
+  margin: 0;
+  padding: 10px 20px;
+  
+  border-radius: 3px;
+  border: 1px solid;
+  width: 100%;
+}
+
+.fiel-input:focus + .name-modals{
+  color: #757575;
+}
 .tema-modal{
   font-weight: bold;
   font-size: 20px;
