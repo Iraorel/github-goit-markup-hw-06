@@ -55,32 +55,42 @@
        <h3 class="tema-modal">Оставьте свои данные, мы вам перезвоним</h3>
        <form class="form-modal" autocomplete="on">
           <div class="form-field">
-                  <label for="name" class="name-modals" >Имя</lable>
-                  <input type="text" class="fiel-input"  name="name" id="name" autofocus>
-                  <svg class="icon-modals">
-                     <use href="./images/symbol-defs.svg#icon-iconsend"></use>
-                  </svg>
-                  
+            <label for="tel" class="name-modals" >Имя</label>  
+            <input type="tel" class="fiel-input"  name="tel" id="tel">
+                  <svg class="icon-modals" widht="12" height="12">
+                     <use href="./images/sprite.svg.svg#icon-head"></use>
+                  </svg>             
                </div>
+
           <div class="form-field">
             <label for="tel" class="name-modals" >Телефон</label>  
             <input type="tel" class="fiel-input"  name="tel" id="tel">
+            <svg class="icon-modals" widht="13" height="13">
+               <use href="./images/sprite.svg.svg#icon-phon"></use>
+            </svg>   
                   
           </div>
+
           <div class="form-field">
             <label for="email" class="name-modals">Почта</label>  
             <input type="email" class="fiel-input"  name="email" id="email"> 
+            <svg class="icon-modals" widht="15" height="12" >
+               <use href="./images/sprite.svg.svg#icon-mail"></use>
+            </svg>   
                  
          </div>
+
          <div class="form-field">
             <label for="comments" class="name-modals">Комментарий</label>  
             <textarea  class="fiel-input" name="comments" id="comments" cols="30" rows="5"></textarea>
                 
                </div>
+
           <div class="form-field">
          <input type="checkbox" name="meeting" value="meeting" id="meeting">
          <label for="meeting" class="name-meeting">Соглашаюсь с рассылкой и принимаю Условия договора</label>
          </div>
+
          <button class="button" type="submit">Отправить</button>
       </form>
       </div>
@@ -415,17 +425,20 @@
    </div>
    <div class="content-footer">
       <h3 class="subscribe">Подпишитесь на рассылку</h3>
-      <form  class="subscribe-us" >
-<input type="e-mail" class="mail" placeholder="E-mail">
-<svg class="icon-mail">
+      <form  class="subscribe-us">
+         <div class="footer-field">
+<input type="e-mail" class="mail" placeholder="">
+<svg class="icon-E-mail">
    <use href="./images/sprite.svg.svg#icon-E-mail"></use>
 </svg>
+</div>
+   <div class="">
 <button class="button" type="submit">Подписаться
    <svg class="icon-mail">
       <use href="./images/sprite.svg.svg#icon-iconsend"></use>
    </svg>
 </button>
-
+</div>
       </form>
    </div>
 </div>

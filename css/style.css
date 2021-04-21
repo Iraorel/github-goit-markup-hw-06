@@ -352,21 +352,25 @@ height: 11px;
 }
 
 .form-field{
- 
+ position: relative;
   margin-bottom: 20px;
 
 }
 
-.name-modals{
-  
-
-}
 
 .icon-modals{
-  width: 32px;
-  height: 32px;
+position: absolute;
+top: 60%;
+left: -120px;
   color:var(--title-color);
 
+}
+.form-field:focus-within>.icon-modals{
+  color: var(--accent-color) ;
+}
+
+.name-modals{
+  left: -120%;
 }
 .fiel-input{
   margin: 0;
@@ -390,12 +394,13 @@ height: 11px;
   color: var(--title-color);
 }
 
-.name-modal{
-  
+.name-modals{
+  display: flex;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--main-text-color);
+  padding: 4px;
 }
 
 .name-meeting{
@@ -644,18 +649,29 @@ height: 11px;
   line-height: 1.25;
   letter-spacing: 00.03em;
  
-  
 }
-.icon-mail{
-  position: absolute;
-  top: 50%;
-  left: 0;
 
-  display: inline-block;
-  width: 47px;
+.footer-field{
+  position: relative;
+}
+
+.icon-E-mail{
+  position: absolute;
+  top: 30%;
+ left: 20px;
+    width: 47px;
   height: 20px;
   
-  color: rgba (255, 255, 255, 0.6);
+  fill: rgba(255, 255, 255, 0.1);
+}
+
+.icon-mail{
+  
+  right: 20px;
+    width: 47px;
+  height: 20px;
+  
+  fill: var(--dark-bg-text-color);
 }
 
 /*
