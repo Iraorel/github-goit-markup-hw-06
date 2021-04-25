@@ -369,9 +369,6 @@ display: inline-block;
 
 }
 
-.form-field:focus-within > .icon-modals{
-  background-color: var() ;
-}
 
 .name-modals{
   left: -120%;
@@ -382,13 +379,18 @@ display: inline-block;
   padding-left: 40px;
   
   border-radius: 3px;
-  border: 1px solid;
+  border: 1px solid rgba(33, 33, 33, 0.2);
   width: 100%;
 }
 
+.fiel-input .comments{
+  resize: none;
+}
+
+
 .form-field-checkbox{
   display: inline-block;
-  outline: 1px solid black;
+  
 }
 .checkbox {
   -webkin-appearance: none;
@@ -407,8 +409,9 @@ display: inline-block;
   width: 16px;
   height: 12px;
   margin-right: 10px;
+  left: 0;
 
-  border:2px solid red ;
+  border:2px solid var(--dark) ;
   border-radius: 4px;
 }
 .checkbox:checked {
@@ -424,10 +427,7 @@ display: inline-block;
   background-size: contain;
   background-origin: border-box;
 }
-/*
-.fiel-input:focus > .fiel-input {
-  background-color:var(--accent-color);
-}*/
+
 .tema-modal{
   font-weight: bold;
   font-size: 20px;
@@ -665,10 +665,16 @@ display: inline-block;
   width: 358px;
   height: 50px;
   padding: 20px;
+  margin-right: 8px;
   
   background-color: var(--dark-bg-color);
   
 }
+ .footer.button{
+   width: 200px;
+   height: 50px;
+   
+ }
 /*.mail:-webkit-autofill,
 .mail:-webkit-autofill:hover,
 .mail:-webkit-autofill:focus {
@@ -694,18 +700,9 @@ display: inline-block;
 }
 
 .footer-field{
-  position: relative;
+  display: flex;
 }
-/*
-.icon-E-mail{
-  position: absolute;
-  top: 30%;
- left: 20px;
-    width: 47px;
-  height: 20px;
-  
-  fill: rgba(255, 255, 255, 0.1);
-}*/
+
 
 .icon-mail{
   
@@ -716,17 +713,6 @@ display: inline-block;
   fill: var(--dark-bg-text-color);
 }
 
-/*
-.adress .link {
-  padding-top: 0px;
-  padding-bottom: 8px;
-}
-
-.join {
-  display: block;
-  margin-left: 70px;
-}
-*/
 
 
 /* portfolio */

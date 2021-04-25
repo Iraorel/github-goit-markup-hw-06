@@ -60,7 +60,7 @@
                <use href="./images/sprite.svg.svg#icon-head"></use>
             </svg> 
             <label for="name" class="name-modals" >Имя</label>  
-            <input type="text" class="fiel-input"  name="tel"  placeholder=" ">
+            <input type="text" class="fiel-input"  name="tel"  placeholder=" " pattern="[A-Za-zА-Яа-яЁё]"> 
                             
                </div>
 
@@ -75,7 +75,7 @@
 
           <div class="form-field">
             <label for="email" class="name-modals">Почта</label>  
-            <input type="email" class="fiel-input"  name="email"  placeholder=" "> 
+            <input type="email" class="fiel-input"  name="email"  placeholder=" " pattern=""> 
             <svg class="icon-modals" widht="15" height="12" >
                <use href="./images/sprite.svg.svg#icon-mail"></use>
             </svg>   
@@ -84,16 +84,17 @@
 
          <div class="form-field">
             <label for="comments" class="name-modals">Комментарий</label>  
-            <textarea  class="fiel-input" name="comments" id="comments" cols="30" rows="5" placeholder="Введите текст"></textarea>
+            <textarea  class="fiel-input comments" name="comments" id="comments" cols="30" rows="5" placeholder="Введите текст"></textarea>
                 
                </div>
 
           <div class="form-field-checkbox">
          <input class="checkbox" type="checkbox" name="meeting" value="meeting"   placeholder=" ">
-         <label for="meeting" class="name-meeting">Соглашаюсь с рассылкой и принимаю Условия договора</label>
          <svg class="icon-checkbox" widht="16" height="13" >
             <use href="./images/sprite.svg.svg#icon-Vector3"></use>
          </svg>  
+         <label for="meeting" class="name-meeting">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+        
       
       </div>
 
@@ -384,6 +385,8 @@
          </div>
          </section>
       </main>
+
+
      <footer class="dark-bg-footer">
    <div class="conteiner">
       <a class="link logo" href="/">
@@ -434,14 +437,15 @@
       <form  class="subscribe-us">
          <div class="footer-field">
 <input type="e-mail"  name="user_name" class="mail" placeholder="E-mail ">
-</div>
-   <div class="">
-<button class="button" type="submit">Подписаться
+
+  
+<button class="button footer" type="submit">Подписаться
    <svg class="icon-mail">
       <use href="./images/sprite.svg.svg#icon-iconsend"></use>
    </svg>
 </button>
 </div>
+
       </form>
    </div>
 </div>
