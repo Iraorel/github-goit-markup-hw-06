@@ -58,7 +58,7 @@
          <div class="form-field">
             
             <label for="name" class="name-modals" >Имя</label>  
-            <input type="text" class="fiel-input"  name="tel"  placeholder=" " pattern="[A-Za-zА-Яа-яЁё]"> 
+            <input type="text" class="fiel-input"  name="tel"  placeholder=" " pattern="[A-Za-zА-Яа-яЁё]/s"> 
             <svg class="icon-modals" widht="12" height="12">
                <use href="./images/sprite.svg.svg#icon-head"></use>
             </svg>             
@@ -66,7 +66,7 @@
 
           <div class="form-field">
             <label for="tel" class="name-modals" >Телефон</label>  
-            <input type="tel" class="fiel-input"  name="tel" placeholder=" ">
+            <input type="tel" class="fiel-input"  name="tel" placeholder=" " pattern="[0-9]">
             <svg class="icon-modals" widht="13" height="13">
                <use href="./images/sprite.svg.svg#icon-phon"></use>
             </svg>   
@@ -75,8 +75,8 @@
 
           <div class="form-field">
             <label for="email" class="name-modals">Почта</label>  
-            <input type="email" class="fiel-input"  name="email"  placeholder=" " pattern=""> 
-            <svg class="icon-modals" widht="15" height="12" >
+            <input type="email" class="fiel-input"  name="email"  placeholder=" " patter="[A-Za-zА ][0-9]{3}"> 
+                       <svg class="icon-modals" widht="15" height="12" >
                <use href="./images/sprite.svg.svg#icon-mail"></use>
             </svg>   
                  
@@ -84,17 +84,18 @@
 
          <div class="form-field">
             <label for="comments" class="name-modals">Комментарий</label>  
-            <textarea  class="fiel-input comments" name="comments" id="comments" cols="30" rows="5" placeholder="Введите текст"></textarea>
+            <textarea  class="fiel-input comments" name="comments" id="comments" cols="30" rows="5" placeholder="Введите текст" pattern="[A-Za-zА-Яа-яЁё]/s"></textarea>
                 
                </div>
 
           <div class="form-field-checkbox">
-            <label for="meeting" class="name-meeting">
-         <input class="checkbox" type="checkbox" name="meeting" value="meeting"   placeholder=" ">
-         <svg class="icon-checkbox" widht="16" height="13" >
-            <use href="./images/sprite.svg.svg#icon-Vector3"></use>
+            <label  class="check">
+         <input class="check__input" type="checkbox"  value="meeting"   placeholder=" " >
+         <svg class="check__box" >
+            <use href="./images/sprite.svg.svg/#icon-modal"></use>
          </svg>  
-         Соглашаюсь с рассылкой и принимаю Условия договора</label>
+         Соглашаюсь с рассылкой и принимаю Условия договора
+        </label>
         
       
       </div>
