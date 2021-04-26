@@ -393,8 +393,8 @@ display: inline-block;
   
 }
 
-.fiel-input:focus-within{
-  border: var(--accent-color);
+.fiel-input:focus{
+  border: 1px solid var(--accent-color);
 }
 
 .form-field-checkbox{
@@ -409,6 +409,7 @@ display: inline-block;
 
   position: absolute;
 }
+
 
 .form-field-checkbox {
   display: flex;
@@ -432,14 +433,18 @@ display: inline-block;
 
 }
 /*
+.checkbox:checked + .icon-checkbox{
+  background-color: red;
+}*/
+
 .checkbox:checked + .icon-checkbox {
   border-color: transparent;
-  background-color: var(--accent-color);
-  border-image: url('..images/icon/Vector3.svg');
+  background-color: var(--accent-color); /*
+  border-image: url('..images/icon/icon-check.svg');*/
   background-size: contain;
   background-origin: border-box;
 }
-*/
+
 
 .tema-modal{
   font-weight: bold;
